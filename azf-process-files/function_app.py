@@ -33,4 +33,4 @@ def get_file(my_blob: func.InputStream) -> func.HttpResponse:
 
     file_name = my_blob.name
 
-    return func.HttpResponse(f"Hello, {name}. This Blob triggered function executed successfully.")
+    return func.HttpResponse(f"Hello, {file_name}. This Blob triggered function executed successfully.")
